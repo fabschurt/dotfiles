@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # sudo
 alias sudo='sudo '
 alias supersaiyan='sudo -i -u root'
@@ -36,7 +34,7 @@ alias dc='docker-compose'
 alias dce='docker-compose exec'
 alias dcr='docker-compose run --rm'
 alias dcu='docker-compose up -d'
-alias dcl='docker-compose logs --tail=10'
+alias dcl='docker-compose logs --tail=20'
 
 # apt-get
 alias aptsearch='apt-cache search --names-only'

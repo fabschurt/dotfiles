@@ -1,5 +1,3 @@
-#!/bin/bash
-
 export PS1="\\[$(tput setaf 2)\\]\\[$(tput bold)\\]\\u\\[$(tput sgr0)\\]@\\H:\\[$(tput setaf 4)\\]\\[$(tput bold)\\]\\w\\[$(tput sgr0)\\]\\$ "
 export VISUAL=vi
 export LESS='--chop-long-lines --hilite-search --jump-target=.5 --ignore-case --RAW-CONTROL-CHARS --tabs=2'
