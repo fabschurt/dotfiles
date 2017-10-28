@@ -1,5 +1,5 @@
 # sudo
-alias sudo='sudo '
+alias sudo='sudo ' # Allows for using aliases with sudo
 alias supersaiyan='sudo -i -u root'
 
 # Git
@@ -10,14 +10,14 @@ alias gb='git branch -avv'
 alias gr='git remote -v'
 alias grp='git remote prune'
 alias grpo='git remote prune origin'
-alias gd='git diff --ws-error-highlight=all'
-alias gdc='git diff --cached --ws-error-highlight=all'
-alias gl='git log --ws-error-highlight=all'
-alias glp='git log -p --ws-error-highlight=all'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gl='git log'
+alias glp='git log -p'
 alias gn='git log --oneline --decorate --graph'
 alias gna='git log --oneline --decorate --graph --all'
-alias gsh='git show --ws-error-highlight=all'
-alias gw='git whatchanged'
+alias gw='git log --raw --no-merges'
+alias gsh='git show'
 alias gf='git fetch --all'
 alias gch='git checkout'
 alias gchb='git checkout --no-track -b'
@@ -30,24 +30,28 @@ alias gpf='git push --force-with-lease'
 
 # Docker
 alias d='docker'
-alias dv='docker volume'
-alias dn='docker network'
-alias ds='docker system'
+alias dvl='docker volume ls'
 alias di='docker images'
 alias dp='docker ps'
 alias dpa='docker ps -a'
 alias de='docker exec -ti'
 alias dr='docker run --rm -ti'
+alias dl='docker logs'
+alias dlf='docker logs -f'
+
+# Docker Compose
 alias dc='docker-compose'
 alias dcu='docker-compose up -d'
 alias dcp='docker-compose ps'
 alias dce='docker-compose exec'
 alias dcr='docker-compose run --rm'
-alias dcl='docker-compose logs --tail=20'
+alias dcl='docker-compose logs'
+alias dclf='docker-compose logs -f'
 
-# apt-get
+# APT
 alias aptsearch='apt-cache search --names-only'
 alias aptshow='apt-cache show'
+alias aptpurge='apt-get purge --auto-remove'
 
 # Misc.
 alias jpegtrim='jpegoptim -pt --strip-all'
