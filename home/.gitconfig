@@ -1,0 +1,7 @@
+[include]
+	path = .gitidentity
+[core]
+	editor = vi
+	excludesfile = ~/.gitignore
+[diff]
+	wsErrorHighlight = all
