@@ -1,8 +1,8 @@
 # Displays a nice ASCII weather report right in the terminal.
 #
-# Input:
-# $1 – name of the city to display weather for (default: nantes)
-# $2 – locale of the weather report (default: fr)
+# Args:
+# $1 Name of the city to display weather for (default: nantes)
+# $2 Locale of the weather report (default: fr)
 weather() {
   declare city="${1:-nantes}"
   declare lang="${2:-fr}"
