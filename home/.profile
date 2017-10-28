@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Default assets
 [ -f "${HOME}/.exports" -a -r "${HOME}/.exports" ] && . "${HOME}/.exports"
 [ -f "${HOME}/.aliases" -a -r "${HOME}/.aliases" ] && . "${HOME}/.aliases"
