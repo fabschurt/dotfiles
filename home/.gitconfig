@@ -3,7 +3,5 @@
 [core]
 	editor = vi
 	excludesfile = ~/.gitignore
-[diff]
-	wsErrorHighlight = all
 [push]
 	default = simple
