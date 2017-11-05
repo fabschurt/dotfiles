@@ -2,6 +2,12 @@
 alias sudo='sudo ' # Allows for using aliases with sudo
 alias supersaiyan='sudo -i -u root'
 
+# coreutils
+alias la='ls -lahp --group-directories-first --color=auto'
+alias grep='grep -In --color=auto'
+alias egrep='egrep -In --color=auto'
+alias rgrep='rgrep -In --color=auto'
+
 # Git
 alias g='git'
 alias gs='git status'
