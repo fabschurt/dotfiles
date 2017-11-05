@@ -33,10 +33,6 @@
 
 'atom-text-editor':
   'ctrl-d': 'editor:delete-line'
-  'ctrl-shift-d': 'editor:duplicate-lines'
-  'ctrl-b': 'bracket-matcher:go-to-matching-bracket'
   'ctrl-shift-up': 'editor:add-selection-above'
   'ctrl-shift-down': 'editor:add-selection-below'
-  'ctrl-shift-z': 'core:redo'
   'alt-d': 'find-and-replace:select-next'
-  'ctrl-e': 'emmet:expand-abbreviation'
