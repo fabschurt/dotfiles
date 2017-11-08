@@ -1,0 +1,83 @@
+"*":
+  "atom-autocomplete-php":
+    autoloadPaths: [
+      "vendor/autoload.php"
+      "php/vendor/autoload.php"
+    ]
+    classMapFiles: [
+      "vendor/composer/autoload_classmap.php"
+      "php/vendor/composer/autoload_classmap.php"
+    ]
+  "atom-symfony2":
+    console: [
+      "app/console"
+      "bin/console"
+    ]
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab"
+    enableExtendedUnicodeSupport: true
+  "bracket-matcher": {}
+  "command-palette":
+    preserveLastSearch: true
+  core:
+    disabledPackages: [
+      "background-tips"
+      "autosave"
+      "package-generator"
+      "dev-live-reload"
+      "welcome"
+      "timecop"
+      "styleguide"
+      "spell-check"
+    ]
+    excludeVcsIgnoredPaths: false
+    followSymlinks: false
+    projectHome: "/home/fabien/Projects"
+    reopenProjectMenuCount: 10
+    telemetryConsent: "no"
+  docblockr:
+    align_tags: "no"
+    deep_indent: true
+    return_description: false
+    short_primitives: true
+    spacer_between_sections: "true"
+  editor:
+    preferredLineLength: 120
+    scrollPastEnd: true
+    showCursorOnSelection: false
+    showIndentGuide: true
+    showInvisibles: true
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "b817839e-ac35-4416-a025-1c5c3030a936"
+  "find-and-replace":
+    closeFindPanelAfterSearch: true
+    focusEditorAfterSearch: true
+    scrollToResultOnLiveSearch: true
+  "fuzzy-finder":
+    preserveLastSearch: true
+  "git-diff": {}
+  "highlight-selected":
+    highlightInPanes: false
+    lightTheme: true
+  "line-ending-selector":
+    defaultLineEnding: "LF"
+  "markdown-preview": {}
+  "one-dark-ui":
+    tabSizing: "Minimum"
+  "one-light-ui":
+    tabSizing: "Minimum"
+  "status-bar":
+    fullWidth: false
+  tabs:
+    addNewTabsAtEnd: true
+    enableMruTabSwitching: false
+    enableVcsColoring: true
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+    keepMarkdownLineBreakWhitespace: false

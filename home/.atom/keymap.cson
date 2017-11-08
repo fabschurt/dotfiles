@@ -36,3 +36,33 @@
   'ctrl-shift-up': 'editor:add-selection-above'
   'ctrl-shift-down': 'editor:add-selection-below'
   'alt-d': 'find-and-replace:select-next'
+
+'.platform-win32, .platform-linux':
+  'ctrl-k ctrl-t': 'tree-view:toggle'
+
+'body':
+  'ctrl-k up': 'pane:split-up-and-move-active-item'
+  'ctrl-k right': 'pane:split-right-and-move-active-item'
+  'ctrl-k down': 'pane:split-down-and-move-active-item'
+  'ctrl-k left': 'pane:split-left-and-move-active-item'
+
+'.workspace':
+  'ctrl-k ctrl-g': 'github:toggle-git-tab'
+  'ctrl-k ctrl-h': 'github:toggle-github-tab'
+
+# Disable all AZERTY-quirky bindings
+'*':
+  'ctrl-8': '!unset'
+  'ctrl-9': '!unset'
+  'ctrl-shift-8': '!unset'
+  'ctrl-shift-9': '!unset'
+  'ctrl-_': '!unset'
+  'ctrl-+': '!unset'
+  'ctrl-\\': '!unset'
+  'alt-\\': '!unset'
+  'ctrl-[': '!unset'
+  'ctrl-]': '!unset'
+  'ctrl-alt-[': '!unset'
+  'ctrl-alt-]': '!unset'
+  'ctrl-alt-shift-[': '!unset'
+  'ctrl-alt-shift-]': '!unset'

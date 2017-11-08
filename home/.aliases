@@ -5,6 +5,7 @@ alias supersaiyan='sudo -i -u root'
 # coreutils
 alias la='ls -lahp --group-directories-first --color=auto'
 alias grep='grep -In --color=auto'
+alias igrep='grep -Ini --color=auto'
 alias egrep='egrep -In --color=auto'
 alias rgrep='rgrep -In --color=auto'
 
