@@ -12,6 +12,8 @@
     console: [
       "app/console"
       "bin/console"
+      "php/app/console"
+      "php/bin/console"
     ]
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
