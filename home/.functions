@@ -8,14 +8,18 @@ weather() {
   weather_lang="${2:-"$(echo "$LANG" | head -c 2)"}"
 
   if [ -z "$weather_city" ]; then
-    echo '[ERROR] Impossible to resolve your city'
+    echo '[ERROR] Could not resolve your city'
+
     return 1
   fi
 
   if [ -z "$weather_lang" ]; then
-    echo '[ERROR] Impossible to resolve your language'
+    echo '[ERROR] Could not resolve your language'
+
     return 1
   fi
 
   curl -Ss "http://${weather_lang}.wttr.in/${weather_city}"
+
+  return 0
 }
