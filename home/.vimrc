@@ -8,7 +8,7 @@ if (empty($TMUX))
 endif
 
 syntax on
-source ~/.vimrc_theme
+colorscheme onedark
 
 filetype plugin indent on
 

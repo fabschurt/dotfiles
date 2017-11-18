@@ -1,5 +1,6 @@
-[include]
-	path = .gitidentity
+[user]
+	name = Fabien Schurter
+	email = fabien@fabschurt.com
 [core]
 	editor = vi
 	excludesfile = ~/.gitignore
