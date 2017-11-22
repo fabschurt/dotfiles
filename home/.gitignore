@@ -8,5 +8,6 @@ Thumbs.db
 .localized
 .idea/
 *.sublime-*
+*.orig
 ._*
 .~*
