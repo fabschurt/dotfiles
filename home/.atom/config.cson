@@ -2,11 +2,9 @@
   "atom-autocomplete-php":
     autoloadPaths: [
       "vendor/autoload.php"
-      "php/vendor/autoload.php"
     ]
     classMapFiles: [
       "vendor/composer/autoload_classmap.php"
-      "php/vendor/composer/autoload_classmap.php"
     ]
   "atom-symfony2":
     console: [
@@ -17,7 +15,7 @@
     ]
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
-    confirmCompletion: "tab"
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
     enableExtendedUnicodeSupport: true
   "bracket-matcher": {}
   "command-palette":
@@ -58,6 +56,9 @@
     focusEditorAfterSearch: true
     scrollToResultOnLiveSearch: true
   "fuzzy-finder":
+    ignoredNames: [
+      "**/var/*"
+    ]
     preserveLastSearch: true
   "git-diff": {}
   "highlight-selected":
