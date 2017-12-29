@@ -43,6 +43,7 @@
     short_primitives: true
     spacer_between_sections: "true"
   editor:
+    autoIndentOnPaste: false
     preferredLineLength: 120
     scrollPastEnd: true
     showCursorOnSelection: false
@@ -58,6 +59,7 @@
   "fuzzy-finder":
     ignoredNames: [
       "**/var/*"
+      "**/node_modules/*"
     ]
     preserveLastSearch: true
   "git-diff": {}
@@ -70,6 +72,28 @@
     tabSizing: "Minimum"
   "one-light-ui":
     tabSizing: "Minimum"
+  "php-getters-setters":
+    doNotTypeHint: [
+      "mixed"
+      "numeric"
+      "unknown"
+    ]
+    getterTemplate: '''
+      %scope% function %methodName%(): %type%
+      {
+          return $this->%variable%;
+      }
+
+
+    '''
+    setterTemplate: '''
+      %scope% function %methodName%(%typeHint%$%variable%)
+      {
+          $this->%variable% = $%variable%;
+      }
+
+
+    '''
   "status-bar":
     fullWidth: false
   tabs:
