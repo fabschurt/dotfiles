@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Minecraft
+Exec=java -jar /opt/minecraft/Minecraft.jar
+Icon=/home/fabien/.icons/minecraft.png
+Terminal=false
+Type=Application
