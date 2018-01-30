@@ -1,3 +1,6 @@
+# Source original .profile
+[ -f "${HOME}/.profile.orig" -a -r "${HOME}/.profile.orig" ] && . "${HOME}/.profile.orig"
+
 # Default assets
 [ -f "${HOME}/.exports" -a -r "${HOME}/.exports" ] && . "${HOME}/.exports"
 [ -f "${HOME}/.aliases" -a -r "${HOME}/.aliases" ] && . "${HOME}/.aliases"
