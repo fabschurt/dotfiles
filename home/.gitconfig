@@ -2,7 +2,7 @@
 	name = Fabien Schurter
 	email = fabien@fabschurt.com
 [core]
-	editor = vi
+	editor = vim
 	excludesfile = ~/.gitignore
 [push]
 	default = simple
