@@ -4,6 +4,7 @@ alias supersaiyan='sudo -i -u root'
 
 # coreutils
 alias la='ls -lahp --group-directories-first --color=auto'
+alias rm='rm -I --one-file-system --preserve-root'
 alias grep='grep -In --color=auto'
 alias igrep='grep -Ini --color=auto'
 alias egrep='egrep -In --color=auto'
@@ -56,11 +57,6 @@ alias dce='docker-compose exec'
 alias dcr='docker-compose run --rm'
 alias dcl='docker-compose logs'
 alias dclf='docker-compose logs -f'
-
-# APT
-alias aptsearch='apt-cache search --names-only'
-alias aptshow='apt-cache show'
-alias aptpurge='apt-get purge --auto-remove'
 
 # Misc.
 alias jpegtrim='jpegoptim -pt --strip-all'
