@@ -58,4 +58,5 @@ alias dcl='docker-compose logs'
 alias dclf='docker-compose logs -f'
 
 # Misc.
+alias vi='vim'
 alias jpegtrim='jpegoptim -pt --strip-all'
