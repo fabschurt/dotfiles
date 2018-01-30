@@ -3,6 +3,7 @@
     autoloadPaths: [
       "vendor/autoload.php"
     ]
+    binComposer: "composer"
     classMapFiles: [
       "vendor/composer/autoload_classmap.php"
     ]
