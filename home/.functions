@@ -7,13 +7,13 @@ weather() {
   weather_city="${1:-"${CITY}"}"
   weather_lang="${2:-"$(echo "$LANG" | head -c 2)"}"
 
-  if [ -z "$weather_city" ]; then
+  if [[ -z "$weather_city" ]]; then
     echo '[ERROR] Could not resolve your city'
 
     return 1
   fi
 
-  if [ -z "$weather_lang" ]; then
+  if [[ -z "$weather_lang" ]]; then
     echo '[ERROR] Could not resolve your language'
 
     return 1
