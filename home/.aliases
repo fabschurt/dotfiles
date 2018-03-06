@@ -23,6 +23,7 @@ alias gl='git log --ws-error-highlight=all'
 alias glp='git log -p --ws-error-highlight=all'
 alias gn='git log --oneline --decorate --graph'
 alias gna='git log --oneline --decorate --graph --all'
+alias gchl="git log --no-merges --pretty=format:'* %s'"
 alias gw='git log --raw --no-merges'
 alias gsh='git show --ws-error-highlight=all'
 alias gf='git fetch --all'
