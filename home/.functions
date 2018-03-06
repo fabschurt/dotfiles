@@ -1,4 +1,4 @@
-# Displays a nice ASCII weather report right in the terminal.
+# Displays a nice ASCII weather report right in the terminal (requires `curl`).
 #
 # Args:
 # $1 Name of the city to display weather for (default: value of CITY env var)
@@ -22,4 +22,27 @@ weather() {
   curl -Ss "http://${weather_lang}.wttr.in/${weather_city}"
 
   return 0
+}
+
+# Sends an SMS via the Free Mobile web service (requires `curl` and `php).
+send_sms() {
+  if [[ ! -z "$SMS_API_USER" ]]; then
+    username="$SMS_API_USER"
+  else
+    echo 'Username:'
+    read username
+  fi
+
+  if [[ ! -z "$SMS_API_KEY" ]]; then
+    key="$SMS_API_KEY"
+  else
+    echo 'API key:'
+    read key
+  fi
+
+  echo 'Message:'
+  read message
+  message="$(php -r "echo urlencode('${message}');")"
+
+  curl -Ss "https://smsapi.free-mobile.fr/sendmsg?user=${username}&pass=${key}&msg=${message}"
 }
