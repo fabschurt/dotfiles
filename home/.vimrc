@@ -41,9 +41,6 @@ set hlsearch
 " [search] Use smart case detection for search terms
 set ignorecase smartcase
 
-" [search] Don’t loop-search
-set nowrapscan
-
 " Tweak bells
 set visualbell noerrorbells
 
