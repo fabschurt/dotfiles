@@ -29,8 +29,11 @@ set cursorline
 " [ui] Set the minimum amount of lines above and below the cursor
 set scrolloff=3
 
-" Enforce 2-space indentation by default
+" [editor] Enforce 2-space indentation by default
 set shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+
+" [editor] Enable «line wrap» with traditional navigation keys too
+set whichwrap+=<,>,h,l
 
 " [search] Start searching while typing
 set incsearch
