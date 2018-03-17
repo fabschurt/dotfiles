@@ -4,6 +4,8 @@ alias supersaiyan='sudo -i -u root'
 
 # coreutils
 alias la='ls -lahp --group-directories-first --color=auto'
+alias cp='cp -i'
+alias mv='mv -i'
 alias rm='rm -I --one-file-system --preserve-root'
 alias grep='grep -In --color=auto'
 alias igrep='grep -i'
