@@ -29,6 +29,10 @@ set cursorline
 " [ui] Set the minimum amount of lines above and below the cursor
 set scrolloff=3
 
+" [ui] Show invisibles
+set list
+set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:␣
+
 " [editor] Enforce 2-space indentation by default
 set shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 
