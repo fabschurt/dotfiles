@@ -10,3 +10,4 @@
 	tool = meld
 [pager]
 	branch = false
+	tag = false
