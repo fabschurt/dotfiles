@@ -60,6 +60,11 @@ alias dcr='docker-compose run --rm'
 alias dcl='docker-compose logs'
 alias dclf='docker-compose logs -f'
 
+# APT
+alias aptsearch='apt-cache search --names-only'
+alias aptshow='apt-cache show'
+alias aptpurge='apt-get purge --auto-remove'
+
 # Misc.
 alias vi='vim'
 alias jpegtrim='jpegoptim -pt --strip-all'
