@@ -7,7 +7,8 @@ Thumbs.db
 .localization
 .localized
 .idea/
-*.sublime-*
+.sublime-project
+.sublime-workspace
 *.orig
 ._*
 .~*

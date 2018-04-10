@@ -1,0 +1,10 @@
+{
+  "debounce_delay": 250,
+  "diff_popup_default_mode": "diff",
+  "status_bar_text": [
+    "{{branch}} ⋅ {{state}}",
+    "{% if deleted != 0 %} ⋅ {{deleted}}-{% endif %}",
+    "{% if inserted != 0 %} ⋅ {{inserted}}+{% endif %}",
+    "{% if modified != 0 %} ⋅ {{modified}}≠{% endif %}"
+  ],
+}
