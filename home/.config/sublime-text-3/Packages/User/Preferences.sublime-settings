@@ -3,7 +3,7 @@
   "color_scheme": "Packages/Theme - One Dark/One Dark.tmTheme",
   "font_size": 11,
   "rulers": [72, 120],
-  "wrap_width": 120,
+  "word_wrap": false,
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
   "highlight_line": true,
