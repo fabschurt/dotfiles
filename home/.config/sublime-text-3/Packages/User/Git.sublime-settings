@@ -2,5 +2,6 @@
   "save_first": false,
   "commit_rulers": [72],
   "statusbar_branch": false,
-  "statusbar_status": false
+  "statusbar_status": false,
+  "status_opens_file": true
 }
