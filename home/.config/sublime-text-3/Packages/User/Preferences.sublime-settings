@@ -1,6 +1,6 @@
 {
-  "theme": "One Dark.sublime-theme",
-  "color_scheme": "Packages/Theme - One Dark/One Dark.tmTheme",
+  "theme": "Adaptive.sublime-theme",
+  "color_scheme": "Packages/Color Scheme - Default/Mariana.tmTheme",
   "font_size": 11,
   "rulers": [72, 120],
   "word_wrap": false,
