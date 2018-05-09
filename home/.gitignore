@@ -8,8 +8,8 @@ Thumbs.db
 .localized
 .idea/
 .python/
-.sublime-project
-.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 *.orig
 ._*
 .~*
