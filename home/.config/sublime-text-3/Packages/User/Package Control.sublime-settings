@@ -1,5 +1,6 @@
 {
   "installed_packages": [
+    "All Autocomplete",
     "Case Conversion",
     "Cucumber",
     "DiffTabs",
@@ -9,6 +10,7 @@
     "Git",
     "GitGutter",
     "Package Control",
+    "PHP Companion",
     "PHP-Twig",
     "SideBarEnhancements",
     "SyncedSideBar",
