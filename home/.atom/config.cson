@@ -84,16 +84,16 @@
       {
           return $this->%variable%;
       }
-
-
+      
+      
     '''
     setterTemplate: '''
       %scope% function %methodName%(%typeHint%$%variable%)
       {
           $this->%variable% = $%variable%;
       }
-
-
+      
+      
     '''
   "status-bar":
     fullWidth: false
