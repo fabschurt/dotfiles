@@ -7,9 +7,9 @@ Thumbs.db
 .localization
 .localized
 .python/
-*.tags*
 *.sublime-project
 *.sublime-workspace
 *.orig
+*.tags*
 ._*
 .~*
