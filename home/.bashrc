@@ -9,4 +9,4 @@
 
 # Custom, user-defined assets
 [[ -f "${HOME}/.secrets" && -r "${HOME}/.secrets" ]] && source "${HOME}/.secrets"
-[[ -f "${HOME}/.sh.custom" && -r "${HOME}/.sh.custom" ]] && source "${HOME}/.sh.custom"
+[[ -f "${HOME}/.bashrc.local" && -r "${HOME}/.bashrc.local" ]] && source "${HOME}/.bashrc.local"
