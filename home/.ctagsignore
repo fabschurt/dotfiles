@@ -1,0 +1,10 @@
+.git/*
+.python/*
+node_modules/*
+dist/*
+var/*
+*.lock
+*.orig
+*.log
+*.cache
+
