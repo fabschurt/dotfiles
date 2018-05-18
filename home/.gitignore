@@ -6,8 +6,8 @@ Thumbs.db
 .directory
 .localization
 .localized
-.idea/
 .python/
+*.tags*
 *.sublime-project
 *.sublime-workspace
 *.orig

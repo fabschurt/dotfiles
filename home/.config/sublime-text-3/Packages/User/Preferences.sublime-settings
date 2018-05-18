@@ -33,7 +33,8 @@
 		"*.cache",
 		"*/.git/*",
 		"*/var/*",
-		"*/node_modules/*"
+		"*/node_modules/*",
+		".tags*"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,

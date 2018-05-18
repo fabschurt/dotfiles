@@ -4,8 +4,8 @@
 	],
 	"installed_packages":
 	[
-		"All Autocomplete",
 		"Case Conversion",
+		"CTags",
 		"Cucumber",
 		"DiffTabs",
 		"DocBlockr",
