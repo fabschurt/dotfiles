@@ -11,6 +11,7 @@
   { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false } },
   { "keys": ["f5"], "command": "sort_lines", "args": {"case_sensitive": false} },
   { "keys": ["ctrl+f5"], "command": "sort_lines", "args": {"case_sensitive": true} },
+  { "keys": ["ctrl+shift+r"], "command": "goto_symbol_in_project" },
   { "keys": ["ctrl+shift+g"], "command": "goto_definition" },
   { "keys": ["ctrl+alt+u"], "command": "find_use" },
   { "keys": ["ctrl+alt+c"], "command": "insert_php_constructor_property" },
