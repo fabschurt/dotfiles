@@ -1,5 +1,5 @@
 [
-  { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
   { "keys": ["alt+d"], "command": "find_under_expand" },
   { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
   { "keys": ["ctrl+tab"], "command": "next_view" },
@@ -8,6 +8,7 @@
   { "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
   { "keys": ["alt+shift+up"], "command": "swap_line_up" },
   { "keys": ["alt+shift+down"], "command": "swap_line_down" },
+  { "keys": ["alt+shift+d"], "command": "duplicate_line" },
   { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false } },
   { "keys": ["f5"], "command": "sort_lines", "args": {"case_sensitive": false} },
   { "keys": ["ctrl+f5"], "command": "sort_lines", "args": {"case_sensitive": true} },
