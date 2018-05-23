@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"ApacheConf",
 		"Case Conversion",
 		"CTags",
 		"Cucumber",
@@ -13,6 +14,7 @@
 		"Emmet",
 		"Git",
 		"GitGutter",
+		"One Dark Color Scheme",
 		"Package Control",
 		"PHP Companion",
 		"PHP-Twig",
