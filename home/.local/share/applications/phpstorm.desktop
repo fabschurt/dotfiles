@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=PhpStorm
-Exec=/usr/local/bin/pstorm
-Icon=/home/fabien/.icons/phpstorm.png
-Terminal=false
-Type=Application
