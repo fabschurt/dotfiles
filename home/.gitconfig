@@ -28,3 +28,5 @@
 	whitespace = red reverse
 [credential]
 	helper = cache
+[github]
+	user = fabschurt

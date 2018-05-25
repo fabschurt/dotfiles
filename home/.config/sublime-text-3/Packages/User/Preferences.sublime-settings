@@ -66,6 +66,7 @@
 	"rulers":
 	[
 		72,
+		80,
 		120
 	],
 	"show_definitions": false,
