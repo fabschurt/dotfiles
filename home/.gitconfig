@@ -9,6 +9,8 @@
 	default = simple
 [merge]
 	tool = meld
+[mergetool]
+	keepBackup = false
 [pager]
 	branch = false
 	tag = false
