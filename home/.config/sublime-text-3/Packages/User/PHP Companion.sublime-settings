@@ -1,4 +1,5 @@
 {
   "allow_use_from_global_namespace": true,
-  "docblock_inherit": "inheritdoc"
+  "docblock_inherit": "inheritdoc",
+  "use_todo_implement": true
 }
