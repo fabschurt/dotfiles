@@ -27,7 +27,6 @@
 		"*min.js",
 		".tags*",
 		".python/*",
-		"node_modules/*",
 		"build/*",
 		"dist/*",
 		"var/*"
