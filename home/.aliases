@@ -56,9 +56,12 @@ alias dcu='docker-compose up -d'
 alias dcuf='docker-compose up -d --force-recreate'
 alias dcp='docker-compose ps'
 alias dce='docker-compose exec'
+alias dcet='docker-compose exec -T'
 alias dcr='docker-compose run --rm'
 alias dcl='docker-compose logs'
 alias dclf='docker-compose logs -f'
+alias dcb='docker-compose build'
+alias dcbn='docker-compose build --no-cache'
 
 # APT
 alias aptsearch='apt-cache search --names-only'
