@@ -9,7 +9,6 @@ alias mv='mv -i'
 alias rm='rm -I --one-file-system --preserve-root'
 alias grep='grep -In --color=auto'
 alias igrep='grep -i'
-alias rgrep='grep -r'
 
 # Git
 alias g='git'
