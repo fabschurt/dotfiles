@@ -3,12 +3,12 @@ alias sudo='sudo ' # Allows for using aliases with sudo
 alias supersaiyan='sudo -i -u root'
 
 # coreutils
-alias la='ls -lahp --group-directories-first --color=auto'
+alias la='ls -lahF --group-directories-first --color=auto'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -I --one-file-system --preserve-root'
 alias grep='grep -In --color=auto'
-alias igrep='grep -i'
+alias grepi='grep -i'
 
 # Git
 alias g='git'
