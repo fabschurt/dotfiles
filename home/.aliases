@@ -35,6 +35,7 @@ alias gc='git commit'
 alias gca='git commit --amend'
 alias gp='git push'
 alias gpu='git push -u origin "$(git rev-parse --abbrev-ref HEAD)"'
+alias gpuf='git push --force-with-lease -u origin "$(git rev-parse --abbrev-ref HEAD)"'
 alias gpf='git push --force-with-lease'
 
 # Docker
@@ -52,6 +53,7 @@ alias dlf='docker logs -f'
 # Docker Compose
 alias dc='docker-compose'
 alias dcu='docker-compose up -d'
+alias dcun='docker-compose up -d --no-deps'
 alias dcur='docker-compose up -d --remove-orphans'
 alias dcuf='docker-compose up -d --force-recreate'
 alias dcufr='docker-compose up -d --force-recreate --remove-orphans'
