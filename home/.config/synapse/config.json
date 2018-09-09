@@ -29,7 +29,6 @@
   "data-sink" : {
     "global" : {
       "disabled-plugins" : [
-        "SynapseCalculatorPlugin",
         "SynapseChatActions",
         "SynapseChromiumPlugin",
         "SynapseDictionaryPlugin",
@@ -42,7 +41,8 @@
         "SynapseSshPlugin",
         "SynapseScreenSaverPlugin",
         "SynapseSystemManagementPlugin",
-        "SynapseSelectionPlugin"
+        "SynapseSelectionPlugin",
+        "SynapseCalculatorPlugin"
       ]
     }
   }
