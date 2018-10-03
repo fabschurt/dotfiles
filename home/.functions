@@ -1,11 +1,16 @@
-# Displays a nice ASCII weather report right in the terminal (requires `curl`).
+# Displays a nice ASCII weather report right in the terminal.
+#
+# Requires:
+# 
+# * `curl`
 #
 # Args:
+# 
 # $1 Name of the city to display weather for (default: value of CITY env var)
 # $2 Language of the report as a 2-letter ISO 639-1 code (default: first 2 letters of LANG env var)
 weather() {
-  weather_city="${1:-"${CITY}"}"
-  weather_lang="${2:-"$(echo "$LANG" | head -c 2)"}"
+  local weather_city="${1:-"${CITY}"}"
+  local weather_lang="${2:-"$(echo "$LANG" | head -c 2)"}"
 
   if [[ -z "$weather_city" ]]; then
     echo '[ERROR] Could not resolve your city'
@@ -24,25 +29,33 @@ weather() {
   return 0
 }
 
-# Sends an SMS via the Free Mobile web service (requires `curl` and `php).
-send_sms() {
-  if [[ ! -z "$SMS_API_USER" ]]; then
-    username="$SMS_API_USER"
-  else
-    echo 'Username:'
-    read username
+# Automatically sources any `.aliases` file found in a directory when you `cd`
+# into it, and reinitializes your aliases to the previous state when leaving the
+# directory. An `.aliases` file can only contain `alias …` declarations, otherwise
+# it will be ignored.
+#
+# Requires:
+#
+# * `cat`
+# * `grep`
+cd() {
+  builtin cd "$@"
+
+  if [[ "$?" -gt 0 ]]; then
+    return "$?"
   fi
 
-  if [[ ! -z "$SMS_API_KEY" ]]; then
-    key="$SMS_API_KEY"
-  else
-    echo 'API key:'
-    read key
+  if [[ -f .aliases && -z "$(cat .aliases | grep -v '^alias ')" ]]; then
+    base_aliases="$(alias)"
+    . .aliases
   fi
 
-  echo 'Message:'
-  read message
-  message="$(php -r "echo urlencode('${message}');")"
+  if [[ ! -f .aliases && ! -z "$base_aliases" ]]; then
+    unalias -a
+    eval "$base_aliases"
+  fi
 
-  curl -Ss "https://smsapi.free-mobile.fr/sendmsg?user=${username}&pass=${key}&msg=${message}"
+  return 0
 }
+
+base_aliases=''
