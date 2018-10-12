@@ -1,11 +1,11 @@
 # Displays a nice ASCII weather report right in the terminal.
 #
 # Requires:
-# 
+#
 # * `curl`
 #
 # Args:
-# 
+#
 # $1 Name of the city to display weather for (default: value of CITY env var)
 # $2 Language of the report as a 2-letter ISO 639-1 code (default: first 2 letters of LANG env var)
 weather() {
