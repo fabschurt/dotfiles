@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * {@inheritdoc}
+ */]]></content>
+  <tabTrigger>inherit</tabTrigger>
+  <scope>embedding.php</scope>
+</snippet>
