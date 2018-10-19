@@ -1,0 +1,45 @@
+#!/usr/bin/bash
+
+set -Eeu -o pipefail
+
+install_web_apps() {
+  local -r OUTPUT_DIR=~/.bin
+  local -rA WEB_APPS=(\
+    [deezer]=https://www.deezer.com/en/\
+    [google-maps]=https://www.google.fr/maps\
+    [google-meet]=https://meet.google.com/\
+    [netflix]=https://www.netflix.com/fr-en/\
+    [youtube]=https://www.youtube.com/\
+  )
+
+  yarn global add nativefier
+
+  [[ ! -e "$OUTPUT_DIR" ]] && mkdir "$OUTPUT_DIR"
+
+  for name in "${!WEB_APPS[@]}"; do
+    local output_path="${OUTPUT_DIR}/${name}"
+
+    if [[ -e "$output_path" ]]; then
+      echo "${output_path} already exists, skipping…"
+
+      continue
+    fi
+
+    nativefier \
+      --name "$name" \
+      --maximize \
+      --single-instance \
+      --disable-dev-tools \
+      --show-menu-bar \
+      "${WEB_APPS[$name]}" \
+      "$OUTPUT_DIR"
+
+    mv "${output_path}-linux-x64" "$output_path"
+  done
+}
+
+main() {
+  install_web_apps
+}
+
+main
