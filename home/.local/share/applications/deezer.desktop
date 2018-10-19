@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Deezer
+StartupWMClass=deezer
+Comment=Try Flow, only on Deezer. Listen to your music, when and where you want. Discover more than 53 million tracks, create your own playlists, and share your favourite tracks with your friends.
+Exec=/home/fabien/.bin/deezer/deezer
+Icon=/home/fabien/.bin/deezer/resources/app/icon.png
+Type=Application

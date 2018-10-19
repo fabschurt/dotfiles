@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Google Meet
+StartupWMClass=google-meet
+Comment=Real-time meetings by Google. Using your browser, share your video, desktop, and presentations with teammates and customers.
+Exec=/home/fabien/.bin/google-meet/google-meet
+Icon=/home/fabien/.bin/google-meet/resources/app/icon.png
+Type=Application
