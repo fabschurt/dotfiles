@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=YouTube
+StartupWMClass=youtube
+Exec=/home/fabien/.bin/you-tube/you-tube
+Icon=/home/fabien/.bin/you-tube/resources/app/icon.png
+Type=Application
