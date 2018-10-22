@@ -13,7 +13,7 @@ alias grepi='grep -i'
 # Git
 alias g='git'
 alias gs='git status'
-alias gsa="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd {} && git status -s && echo)' \;"
+alias gsa="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd {} && [[ -d .git ]] && git status -s && echo)' \;"
 alias gb='git branch -avv'
 alias gr='git remote -v'
 alias grp='git remote prune'
