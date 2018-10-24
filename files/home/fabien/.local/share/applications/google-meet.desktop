@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Google Meet
 StartupWMClass=google-meet
-Exec=/home/fabien/.bin/google-meet/google-meet
-Icon=/home/fabien/.bin/google-meet/resources/app/icon.png
+Exec=/home/fabien/.local/bin/google-meet/google-meet
+Icon=/home/fabien/.local/bin/google-meet/resources/app/icon.png
 Type=Application

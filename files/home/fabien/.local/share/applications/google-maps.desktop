@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Google Maps
 StartupWMClass=google-maps
-Exec=/home/fabien/.bin/google-maps/google-maps
-Icon=/home/fabien/.bin/google-maps/resources/app/icon.png
+Exec=/home/fabien/.local/bin/google-maps/google-maps
+Icon=/home/fabien/.local/bin/google-maps/resources/app/icon.png
 Type=Application

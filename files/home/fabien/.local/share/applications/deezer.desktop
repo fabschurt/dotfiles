@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Deezer
 StartupWMClass=deezer
-Exec=/home/fabien/.bin/deezer/deezer
-Icon=/home/fabien/.bin/deezer/resources/app/icon.png
+Exec=/home/fabien/.local/bin/deezer/deezer
+Icon=/home/fabien/.local/bin/deezer/resources/app/icon.png
 Type=Application
