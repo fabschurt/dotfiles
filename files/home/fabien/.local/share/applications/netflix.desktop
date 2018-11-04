@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Netflix
-StartupWMClass=netflix
-Exec=/home/fabien/.local/bin/netflix/netflix
-Icon=/home/fabien/.local/bin/netflix/resources/app/icon.png
-Type=Application
