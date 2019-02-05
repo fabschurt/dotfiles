@@ -74,6 +74,9 @@ alias dclf='docker-compose logs -f'
 alias dcb='docker-compose build'
 alias dcbn='docker-compose build --no-cache'
 
+# Kubernetes
+alias k='kubectl'
+
 # APT
 alias aptsearch='apt-cache search --names-only'
 alias aptshow='apt-cache show'
