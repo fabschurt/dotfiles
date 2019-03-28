@@ -1,13 +1,16 @@
-# Source original .bashrc
-[[ -f "${HOME}/.bashrc.dist" && -r "${HOME}/.bashrc.dist" ]] && source "${HOME}/.bashrc.dist"
+readonly SOURCED_INIT_FILES=(
+  .bashrc.dist
+  .env
+  .aliases
+  .secrets
+  .bashrc.local
+)
 
-# Default assets
-[[ -f "${HOME}/.env" && -r "${HOME}/.env" ]] && source "${HOME}/.env"
-[[ -f "${HOME}/.aliases" && -r "${HOME}/.aliases" ]] && source "${HOME}/.aliases"
-[[ -f "${HOME}/.functions" && -r "${HOME}/.functions" ]] && source "${HOME}/.functions"
+_source_init_files () {
+  for file in "${SOURCED_INIT_FILES[@]}"; do
+    local path="${HOME}/${file}"
+    [[ -f "$path" && -r "$path" ]] && source "$path"
+  done
+}
 
-# Custom, user-defined assets
-[[ -f "${HOME}/.secrets" && -r "${HOME}/.secrets" ]] && source "${HOME}/.secrets"
-[[ -f "${HOME}/.bashrc.local" && -r "${HOME}/.bashrc.local" ]] && source "${HOME}/.bashrc.local"
-
-cd .
+_source_init_files
