@@ -12,19 +12,14 @@
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"Emmet",
-		"Git",
-		"GitGutter",
 		"Language - French - Français",
 		"Package Control",
 		"PHP Companion",
-		"PHP Completions Kit",
 		"PHP-Twig",
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-php",
-		"SyncedSideBar",
-		"Theme - Spacegray",
 		"YAML Nav"
 	]
 }
