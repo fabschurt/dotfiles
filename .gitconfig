@@ -1,0 +1,32 @@
+[user]
+	name = Fabien Schurter
+	email = fabien@fabschurt.com
+
+[core]
+	editor = vim
+	excludesFile = ~/.gitignore
+	pager = /usr/share/git/diff-highlight/diff-highlight | less --RAW-CONTROL-CHARS
+
+[interactive]
+	diffFilter = /usr/share/git/diff-highlight/diff-highlight
+
+[diff]
+	wsErrorHighlight = all
+
+[color]
+	ui = true
+
+[push]
+	default = simple
+
+[pull]
+	ff = only
+
+[merge]
+	tool = meld
+
+[mergetool]
+	keepBackup = false
+
+[credential]
+	helper = cache

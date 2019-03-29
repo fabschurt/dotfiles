@@ -1,0 +1,74 @@
+[
+	// Core
+	{ "keys": ["ctrl+q"], "command": "noop" },
+	{ "keys": ["ctrl+alt+shift+s"], "command": "save_all" },
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+	{ "keys": ["alt+escape"], "command": "toggle_menu" },
+	{ "keys": ["alt+²"], "command": "show_panel", "args": { "panel": "console", "toggle": true } },
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["alt+d"], "command": "find_under_expand" },
+
+	// Git
+	{ "keys": ["ctrl+alt+shift+j"], "command": "next_modification" },
+	{ "keys": ["ctrl+alt+shift+k"], "command": "prev_modification" },
+	{ "keys": ["ctrl+alt+shift+z"], "command": "revert_modification" },
+	{ "keys": ["ctrl+alt+shift+d"], "command": "toggle_inline_diff", "args": { "prefer_hide": true } },
+
+	// PHP Companion
+	{ "keys": ["ctrl+alt+n"], "command": "import_namespace" },
+	{ "keys": ["ctrl+alt+i"], "command": "implement" },
+	{ "keys": ["ctrl+alt+c"], "command": "insert_php_constructor_property" },
+	{ "keys": ["ctrl+alt+u"], "command": "find_use" },
+	{ "keys": ["ctrl+alt+q"], "command": "expand_fqcn", "args": { "leading_separator": true } },
+
+	// LSP
+	{ "keys": ["ctrl+shift+g"], "command": "lsp_symbol_definition", "context": [{"key": "setting.lsp_active"}] },
+	{ "keys": ["f12"], "command": "lsp_symbol_definition", "context": [{"key": "setting.lsp_active"}] },
+
+	// Layout
+	{
+		"keys": ["alt+1"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1]]
+		}
+	},
+	{
+		"keys": ["alt+2"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 0.5, 1.0],
+			"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+		}
+	},
+	{
+		"keys": ["alt+3"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["alt+4"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 0.5, 1.0],
+			"cells":
+			[
+				[0, 0, 1, 1], [1, 0, 2, 1],
+				[0, 1, 1, 2], [1, 1, 2, 2]
+			]
+		}
+	}
+]

@@ -1,0 +1,9 @@
+[
+  // Disable mouse scrolling side-effects
+  { "button": "scroll_down", "modifiers": ["ctrl"], "command": "noop" },
+  { "button": "scroll_up", "modifiers": ["ctrl"], "command": "noop" },
+
+  // Back/forward mouse navigation
+  { "button": "button8", "command": "jump_back" },
+	{ "button": "button9", "command": "jump_forward" }
+]

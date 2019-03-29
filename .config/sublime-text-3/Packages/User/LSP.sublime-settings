@@ -1,0 +1,17 @@
+{
+  "show_code_actions_bulb": true,
+  "only_show_lsp_completions": true,
+  "clients": {
+    "PHP": {
+      "command": ["~/.npm-packages/bin/intelephense", "--stdio"],
+      "languages": [
+        {
+          "languageId": "php",
+          "scopes": ["source.php"],
+          "syntaxes": ["Packages/PHP/PHP.sublime-syntax"]
+        }
+      ]
+    }
+  },
+  "default_clients": {}
+}

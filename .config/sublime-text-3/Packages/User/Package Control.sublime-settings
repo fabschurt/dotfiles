@@ -1,0 +1,28 @@
+{
+	"bootstrapped": false,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ApacheConf",
+		"Case Conversion",
+		"Cucumber",
+		"DiffTabs",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"EditorConfig",
+		"Git",
+		"Language - French - Français",
+		"LSP",
+		"Package Control",
+		"PHP Companion",
+		"PHP-Twig",
+		"ProjectManager",
+		"Random Everything",
+		"Sass",
+		"SideBarEnhancements",
+		"Slugify",
+		"YAML Nav"
+	]
+}
