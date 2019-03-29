@@ -1,9 +1,9 @@
 readonly SOURCED_INIT_FILES=(
-  .bashrc.dist
   .env
-  .aliases
   .secrets
+  .bashrc.dist
   .bashrc.local
+  .aliases
 )
 
 _source_init_files () {
