@@ -5,7 +5,7 @@
 [core]
 	editor = vim
 	excludesFile = ~/.gitignore
-	pager = /usr/share/git/diff-highlight/diff-highlight | less --RAW-CONTROL-CHARS
+	pager = /usr/share/git/diff-highlight/diff-highlight | less
 
 [interactive]
 	diffFilter = /usr/share/git/diff-highlight/diff-highlight

@@ -5,5 +5,5 @@
 
   // Back/forward mouse navigation
   { "button": "button8", "command": "jump_back" },
-	{ "button": "button9", "command": "jump_forward" }
+  { "button": "button9", "command": "jump_forward" }
 ]

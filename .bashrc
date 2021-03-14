@@ -1,19 +1,15 @@
-readonly -a SOURCED_INIT_FILES=(
-  ~/.bashrc.dist
-  ~/.environment
-  ~/.secrets
+readonly -a INIT_FILES=(
   ~/.aliases
   ~/.bashrc.local
   ~/.config/broot/launcher/bash/br
-  /etc/profile.d/vte.sh
 )
 
-main() {
-  for file in "${SOURCED_INIT_FILES[@]}"; do
-    if [[ -f "$file" && -r "$file" ]]; then
-      source "$file"
-    fi
-  done
-}
+for file in "${INIT_FILES[@]}"; do
+  if [[ -f "$file" && -r "$file" ]]; then
+    source "$file"
+  fi
+done
 
-main
+if command -v starship &> /dev/null; then
+  eval "$(starship init bash)"
+fi

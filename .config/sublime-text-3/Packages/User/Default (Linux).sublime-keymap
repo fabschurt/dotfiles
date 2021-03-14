@@ -8,6 +8,12 @@
 	{ "keys": ["alt+²"], "command": "show_panel", "args": { "panel": "console", "toggle": true } },
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 	{ "keys": ["alt+d"], "command": "find_under_expand" },
+	{ "keys": ["ctrl+g"], "command": "find_next" },
+	{ "keys": ["ctrl+shift+g"], "command": "find_prev" },
+	{ "keys": ["ctrl+,"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	{ "keys": ["ctrl+shift+,"], "command": "goto_symbol_in_project" },
+	{ "keys": ["ctrl+;"], "command": "show_overlay", "args": {"overlay": "goto", "text": "#"} },
+	{ "keys": ["ctrl+:"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
 	// Git
 	{ "keys": ["ctrl+alt+shift+j"], "command": "next_modification" },
@@ -16,11 +22,12 @@
 	{ "keys": ["ctrl+alt+shift+d"], "command": "toggle_inline_diff", "args": { "prefer_hide": true } },
 
 	// PHP Companion
-	{ "keys": ["ctrl+alt+n"], "command": "import_namespace" },
-	{ "keys": ["ctrl+alt+i"], "command": "implement" },
-	{ "keys": ["ctrl+alt+c"], "command": "insert_php_constructor_property" },
 	{ "keys": ["ctrl+alt+u"], "command": "find_use" },
 	{ "keys": ["ctrl+alt+q"], "command": "expand_fqcn", "args": { "leading_separator": true } },
+	{ "keys": ["ctrl+alt+n"], "command": "import_namespace" },
+	{ "keys": ["ctrl+shift+g"], "command": "goto_definition_scope" },
+	{ "keys": ["ctrl+alt+c"], "command": "insert_php_constructor_property" },
+	{ "keys": ["ctrl+alt+i"], "command": "implement" },
 
 	// LSP
 	{ "keys": ["ctrl+shift+g"], "command": "lsp_symbol_definition", "context": [{"key": "setting.lsp_active"}] },

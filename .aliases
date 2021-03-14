@@ -1,18 +1,20 @@
 # sudo
-alias sudo='sudo ' # allows for using aliases with sudo
+alias sudo='sudo ' # Allows for using aliases with sudo
 alias supersaiyan='sudo --login --user=root'
 
 # coreutils
-alias la='LC_COLLATE=C exa --color=auto --long --all --all --group --classify --git --group-directories-first --color-scale'
+alias la='LC_COLLATE=C exa --color=auto --long --all --all --group --classify --git --group-directories-first --color-scale --icons'
+alias tree='LC_COLLATE=C exa --color=always --long --all --group --classify --git --group-directories-first --color-scale --icons --tree --ignore-glob=.git'
 alias cp='cp --interactive'
 alias mv='mv --interactive'
-alias rm='rm --interactive=once --one-file-system --preserve-root'
-alias gr='grep --color=auto --binary-files=without-match --line-number'
+#alias rm='rm --interactive=once --one-file-system --preserve-root'
+alias rm='trash --verbose'
+alias egrep='grep --color=auto --perl-regexp --binary-files=without-match --line-number'
 
-# git
+# Git
 alias g='git'
 alias gs='git status'
-alias gsa="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd {} && [[ -d .git ]] && git status --short && echo)' \;"
+alias gsa="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(cd {} && [[ -d .git ]] && echo {} && git status --short && echo)' \;"
 alias gb='git branch --all --verbose --verbose'
 alias gr='git remote --verbose'
 alias grpo='git remote prune origin'
@@ -50,7 +52,7 @@ alias gpu='git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"'
 alias gpuf='git push --force-with-lease --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"'
 alias gpf='git push --force-with-lease'
 
-# docker
+# Docker
 alias d='docker'
 alias dvl='docker volume ls'
 alias di='docker images'
@@ -65,7 +67,7 @@ alias dlf='docker logs --follow'
 alias dn='docker network'
 alias dnl='docker network ls'
 
-# docker-compose
+# Docker Compose
 alias dc='docker-compose'
 alias dcu='docker-compose up --detach'
 alias dcun='docker-compose up --detach --no-deps'
@@ -84,6 +86,11 @@ alias dclf='docker-compose logs --follow'
 alias dcb='docker-compose build'
 alias dcbn='docker-compose build --no-cache'
 
-# misc.
+# Image manipulation
+alias trimjpeg='jpegoptim --strip-all --preserve --totals'
+alias trimpng='pngcrush -brute -reduce -ow -oldtimestamp'
+
+# Misc.
+alias v='vim'
 alias vi='vim'
 alias open='xdg-open'

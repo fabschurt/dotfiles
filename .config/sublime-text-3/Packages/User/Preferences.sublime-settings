@@ -49,7 +49,6 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"indent_guide_options":
 	[
@@ -75,7 +74,9 @@
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"ui_scale": 1.25,
+	"vintage_ctrl_keys": true,
+	"vintage_start_in_command_mode": true,
+	"vintage_use_clipboard": true,
 	"word_wrap": false,
 	"wrap_width": 120
 }

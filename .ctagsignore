@@ -2,8 +2,8 @@
 *.orig
 *.log
 *.cache
-*min.css
-*min.js
+*.min.css
+*.min.js
 .git/*
 .python/*
 build/*

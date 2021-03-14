@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=solaar
+Icon=solaar
+Exec=solaar --window hide
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
