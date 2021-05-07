@@ -9,7 +9,6 @@
 		"EditorConfig",
 		"Git",
 		"Language - French - Français",
-		"LSP",
 		"Package Control",
 		"PHP Companion",
 		"PHP-Twig",
@@ -18,6 +17,7 @@
 		"Sass",
 		"SideBarEnhancements",
 		"Slugify",
+		"TypeScript Syntax",
 		"YAML Nav"
 	]
 }
