@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/fzf.vim'
+Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev --optimize-autoloader'}
 
 call plug#end()
 

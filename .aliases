@@ -7,8 +7,7 @@ alias la='LC_COLLATE=C exa --color=auto --long --all --all --group --classify --
 alias tree='LC_COLLATE=C exa --color=always --long --all --group --classify --git --group-directories-first --color-scale --icons --tree --ignore-glob=.git'
 alias cp='cp --interactive'
 alias mv='mv --interactive'
-#alias rm='rm --interactive=once --one-file-system --preserve-root'
-alias rm='trash --verbose'
+alias rm='rm --interactive=once --one-file-system --preserve-root'
 alias egrep='grep --color=auto --perl-regexp --binary-files=without-match --line-number'
 
 # Git
