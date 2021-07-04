@@ -1,0 +1,11 @@
+*.lock
+*.orig
+*.log
+*.cache
+*.min.css
+*.min.js
+.git/*
+.python/*
+build/*
+dist/*
+var/*

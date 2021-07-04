@@ -1,0 +1,30 @@
+format = """\
+  $username\
+  $directory\
+  $git_branch\
+  $git_commit\
+  $git_state\
+  $git_status\
+  $jobs\
+  $status\
+  $character\
+"""
+
+[username]
+show_always = true
+
+[directory]
+truncation_length = 6
+truncation_symbol = "[…]/"
+
+[git_branch]
+style = "bold blue"
+
+[status]
+disabled = false
+map_symbol = true
+
+[character]
+success_symbol = "😎\n[➜](bold green)"
+error_symbol = "😱\n[➜](bold red)"
+vicmd_symbol = "🦓\n[➜](bold green)"

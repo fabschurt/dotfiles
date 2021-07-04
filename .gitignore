@@ -1,0 +1,14 @@
+ehthumbs.db
+Thumbs.db
+.DS_Store
+.Spotlight-V100
+.Trashes
+.directory
+.localization
+.localized
+*.sublime-project
+*.sublime-workspace
+*.orig
+*.tags*
+._*
+.~*
